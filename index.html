@@ -51,7 +51,7 @@
 
         <div class="container">
             <div class="card-deck">
-                <div ng-repeat="x in filmes" class="movie card my-2 mx-2">
+                <div ng-repeat="x in filmes" class="movie card my-2 mx-auto mx-md-2">
                     <div ng-style="myStyle={'background': 'url({{ x.poster }}) center/cover no-repeat'}"
                         class="wrapper">
                         <div class="header">
@@ -62,7 +62,8 @@
                                 <li>
                                     <a href="#" class="fa fa-bookmark-o"></a>
                                 </li>
-                                <li><a ng-click="toggleLike()" href="# " class="fa fa-heart-o"><span>{{x.likes}}</span></a></li>
+                                <li><a ng-click="toggleLike()" href="# "
+                                        class="fa fa-heart-o"><span>{{x.likes}}</span></a></li>
                                 <li><a href="# " class="fa fa-comment-o"><span></span></a></li>
                             </ul>
                         </div>
@@ -104,7 +105,8 @@
                         <h5>Sobre</h5>
                         <ul class="list-unstyled text-small ">
                             <li><a class="text-muted " href="https://github.com/adornetejr/bakked">Github</a></li>
-                            <li><a class="text-muted " href="https://github.com/adornetejr/bakked/blob/master/LICENSE">Licença</a></li>
+                            <li><a class="text-muted "
+                                    href="https://github.com/adornetejr/bakked/blob/master/LICENSE">Licença</a></li>
                         </ul>
                     </div>
                 </div>
